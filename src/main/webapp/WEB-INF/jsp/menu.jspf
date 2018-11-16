@@ -1,0 +1,28 @@
+	<nav class="navbar navbar-default navbar-fixed-top">
+		<div class="container">
+			<div class="navbar-header">
+		        <a  href="../.." class="navbar-brand active"><i class="fas fa-chart-line bleu"></i></a>
+		        <c:if test="${referer != null }">
+		        		&nbsp;&nbsp;
+		        		<a  href=${referer } class="navbar-brand "><i class="fas fa-arrow-alt-circle-left bleu"></i> </a>
+		        </c:if>
+		          <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#navbar-main">
+		            <span class="icon-bar"></span>
+		            <span class="icon-bar"></span>
+		            <span class="icon-bar"></span>
+		          </button>
+		        </div>
+
+			<div class="navbar-collapse collapse" id="navbar-main">
+				<ul class="nav navbar-nav navbar-right">
+					<li><a href="../societes/liste" class="navbar-brand ">Sociétés</a></li>
+					<li><a href="../contacts/liste" class="navbar-brand ">Contacts</a></li>
+					<li><a href="../affaires/liste" class="navbar-brand ">Affaires</a></li>
+					<li><a href="../factures/liste" class="navbar-brand ">Factures</a></li>
+					<li><a href="../frais/liste"    class="navbar-brand ">Frais</a></li>
+					<li><a href="../actions/liste"    class="navbar-brand ">Actions</a></li>
+					<li><a href="#" class="navbar-brand ">Outils</a></li>
+				</ul>
+			</div>
+		</div>
+	</nav>

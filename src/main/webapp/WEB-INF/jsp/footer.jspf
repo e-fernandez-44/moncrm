@@ -1,0 +1,8 @@
+	<nav class="navbar navbar-default navbar-fixed-bottom hidden-xs">
+		<div class="container">
+			<div class="nav navbar-nav navbar-foot ">
+				<li class="pull-left"><a >© 2018 Copyright</a></li>
+				<li class="pull-right"><a>Emmanuel Fernandez</a></li>
+			</div>
+		</div>
+	</nav>

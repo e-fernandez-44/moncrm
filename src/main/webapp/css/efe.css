@@ -1,0 +1,170 @@
+body {
+	padding-top: 51px;
+	padding-bottom: 70px;
+}
+
+.navbar-foot {
+	width: 100%;
+}
+
+/* a:link, a:visited{ */
+/* 	color: #428bca !important; */
+/* } */
+h1 {
+	line-height: 1.3;
+	font-size: 30px;
+}
+
+h2 {
+	line-height: 1.2;
+}
+
+a:hover{
+	text-decoration: none;
+}
+
+.breadcrumb li {
+	display: inline-block;
+}
+
+input[type=checkbox].big
+{
+  /* Double-sized Checkboxes */
+  -ms-transform: scale(1.6); /* IE */
+  -moz-transform: scale(1.6); /* FF */
+  -webkit-transform: scale(1.6); /* Safari and Chrome */
+  -o-transform: scale(1.6); /* Opera */
+  padding: 10px;
+  
+
+}
+
+
+.padding0 {
+	padding: 0 0 0 0;
+}
+
+.marge0 {
+	margin: 0 0 0 0;
+}
+
+.decalageHaut {
+	margin-top: 10px;
+}
+
+.decalage {
+	display: inline-block;
+	width: 80px;
+}
+
+.decalage100 {
+	display: inline-block;
+	width: 100px;
+}
+
+.breadcrumb  li+li:before {
+	padding: 0 5px;
+	color: #ccc;
+	content: "/\00a0";
+}
+
+.breadcrumb  .active {
+	color: #777;
+}
+
+.margeBas {
+	margin-bottom: 30px;
+}
+
+.bleu {
+	color: #428bca;
+}
+
+.orange {
+	color: orange;
+}
+
+.vert {
+	color: #3c763d;
+}
+
+.rouge {
+	color: #a94442;
+}
+
+
+.width100{
+	
+	width : 100%;
+}
+.inline {
+	display: inline-block;
+}
+
+.paddingLeftZero {
+	padding-left: 0;
+}
+
+.paddingRightZero {
+	padding-right: 0;
+}
+
+.trente {
+	vertical-align:top;
+	min-width: 40px;
+}
+
+.labelOption {
+	width: 110px;
+	color: #31708f !important;
+	font-weight: normal;
+}
+
+.fraisCheck{
+	font-size: 1.5em;
+	
+}
+
+.fraisCheck:hover{
+	cursor: pointer;
+}
+
+#affOptions {
+	margin-bottom: 20px;
+}
+
+.minWidth95 {
+	min-width: 85%;
+}
+
+.dateAffaireGauche {
+	margin-right: 2px !important;
+}
+
+.dateAffaireDroite {
+	margin-left: 2px !important;
+}
+
+.actionPasse{
+	background-color: rgba(255,0,0,0.06);
+}
+.actionFuture{
+	background-color: rgba(0, 255,0,0.06);
+}
+
+
+@media screen and(max-width : 991px) {
+	.w100px {
+		width: 200px;
+	}
+}
+
+@media all {
+	.w100px {
+		width: 120px;
+	}
+}
+
+input[type="search"]::-webkit-search-cancel-button {
+	-webkit-appearance: searchfield-cancel-button;
+}
