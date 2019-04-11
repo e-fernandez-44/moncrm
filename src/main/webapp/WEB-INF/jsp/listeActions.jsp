@@ -59,14 +59,14 @@
 				
 				<table class="table table-hover table-striped ">
 					<tr>
-						<th class=""> 
+						<th class="col-xs-2 "> 
 							
 							<a id="nA" href="#"><span class="glyphicon glyphicon-menu-down"></span></a>
 							
 							<h4 class="inline text-info">&nbsp;Date&nbsp;</h4> 
 							<a id="nD" href="#"><span class="glyphicon glyphicon-menu-up"></span></a>
 						</th>
-						<th class="">
+						<th class="col-xs-10 ">
 							<a id="vA" href="#"><span class="glyphicon glyphicon-menu-down"></span></a> 
 							<h4 class="inline text-info">&nbsp;Tâche&nbsp;</h4> 
 							<a id="vD" href="#"><span class="glyphicon glyphicon-menu-up"></span></a>
@@ -77,7 +77,7 @@
 							<jsp:useBean id="dateValue" class="java.util.Date" />
 							<c:if test="${a.dateLimite le dateValue }"><td class="actionPasse"></c:if>
 							<c:if test="${a.dateLimite gt dateValue }"><td class="actionFuture"></c:if>
-								<fmt:formatDate type = "date" pattern="dd/MM/yyyy" value = "${a.dateLimite}" /><br>
+								<fmt:formatDate type = "date" pattern="dd/MM/yyyy" value = "${a.dateLimite}" />&nbsp;&nbsp;&nbsp;
 								<i class="fas fa-star ${a.importance == 'AFort' ? 'rouge' :  a.importance == 'BMoyen' ? 'orange' : 'vert'}"></i>
 							</td>
 							<td><a href="voir?index=${a.id}"><strong>${a.tache}</strong></a><br>

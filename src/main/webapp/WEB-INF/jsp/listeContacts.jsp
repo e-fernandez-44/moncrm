@@ -76,7 +76,7 @@
 						</tr>
 						
 						<tr class="visible-xs">
-							<td><a href="voir?index=${c.id}"><strong>${c.nom}</strong></a> <div class="text-right">${c.prenom}</div></td>
+							<td><a href="voir?index=${c.id}"><strong>${c.nom}</strong> ${c.prenom}</a></td>
 							<td><a href="../societes/voir?index=${c.societe.id}"><strong>${c.societe.nom}</strong></a> <div class="text-right">${c.societe.adresse.ville }</div></td>
 						</tr>
 						

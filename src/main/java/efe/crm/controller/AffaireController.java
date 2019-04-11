@@ -97,6 +97,7 @@ public class AffaireController {
 		ModelAndView mav = new ModelAndView("ajouterAffaire", "aff", a);
 		List<Contact> listeC = cs.listerContactsOrderByNomPrenomAsc();
 		mav.addObject("listeContacts", listeC);
+		mav.addObject("fraisReel", 0.0);
 		return mav;
 	}
 
@@ -159,6 +160,8 @@ public class AffaireController {
 		Affaire a = as.chargerAffaire(index);
 		ModelAndView mav =  new ModelAndView("ajouterAffaire", "aff", a);
 		mav.addObject("listeContacts", cs.listerContactsOrderByNomPrenomAsc());
+		mav.addObject("fraisReel", frs.totalFraisByAffaire(index));
+
 		return mav;
 	}
 	

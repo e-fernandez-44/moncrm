@@ -2,6 +2,7 @@
     pageEncoding="UTF-8"%>
 <%@taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 <%@taglib uri="http://www.springframework.org/tags/form" prefix="form"%>
+<%@taglib uri="http://java.sun.com/jsp/jstl/fmt" prefix="fmt"%>
     
 <!DOCTYPE html>
 <html>
@@ -120,9 +121,12 @@
 					<form:input path="tarifJour"  placeholder="Tarif Jour ..."  cssClass="form-control" /> 
 				</div>
 
+
+				<fmt:formatNumber type = "number" maxFractionDigits = "2" value = "${fraisReel}" var="fraisR" />
+
 				<div class="form-group">			
-					<form:label path="fraisReel" cssClass="control-label text-primary">Frais Réels :</form:label>
-					<form:input path="fraisReel"  placeholder="Frais Réels ..."  cssClass="form-control" readonly="true"/> 
+					<label for="fraisReel" class="control-label text-primary">Frais Réels :</label>
+					<input id ="fraisReel"  placeholder="Frais Réels ..."  class="form-control" readonly value="${fraisR }"/> 
 				</div>
 				
 <%-- 				<div class="form-group">
